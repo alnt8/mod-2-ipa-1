@@ -101,7 +101,7 @@ def interest(principal, rate, periods):
         rate = float (rate)
         periods = int (periods)
         if rate < 1:
-            return int ((principal * (rate * period)) + principal)
+            return int ((principal * (rate * periods)) + principal)
 
 def body_mass_index(weight, height):
     '''Body Mass Index.
