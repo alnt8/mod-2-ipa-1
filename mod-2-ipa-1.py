@@ -29,12 +29,11 @@ def savings(gross_pay, tax_rate, expenses):
     # Replace `pass` with your code. 
     # Stay within the function. Only use the parameters as input. The function should return your answer.
 
-    def savings(gross_pay, tax_rate, expenses) :
-        gross_pay = int (gross_pay)
-        tax_rate = float (tax_rate)
-        expenses = int (expenses)
-        savings = (gross_pay * (1 - tax_rate)) - expenses
-        return int (savings)
+    gross_pay = int (gross_pay)
+    tax_rate = float (tax_rate)
+    expenses = int (expenses)
+    savings = (gross_pay * (1 - tax_rate)) - expenses
+    return int (savings)
         
 
 def material_waste(total_material, material_units, num_jobs, job_consumption):
@@ -66,12 +65,11 @@ def material_waste(total_material, material_units, num_jobs, job_consumption):
     # Replace `pass` with your code. 
     # Stay within the function. Only use the parameters as input. The function should return your answer.
 
-    def material_waste(total_material, material_units, num_jobs, job_consumption):
-        total_materials = int(total_material)
-        material_units = str(material_units)
-        num_jobs = int(num_jobs)
-        job_consumption = int(job_consumption)
-        return str (total_material - (num_jobs * job_consumption)) + material_units
+    total_materials = int(total_material)
+    material_units = str(material_units)
+    num_jobs = int(num_jobs)
+    job_consumption = int(job_consumption)
+    return str (total_material - (num_jobs * job_consumption)) + material_units
 
 def interest(principal, rate, periods):
     '''Interest.
@@ -96,12 +94,12 @@ def interest(principal, rate, periods):
     '''
     # Replace `pass` with your code. 
     # Stay within the function. Only use the parameters as input. The function should return your answer.
-    def interest(principal, rate, periods):
-        principal = int (principal)
-        rate = float (rate)
-        periods = int (periods)
-        if rate < 1:
-            return int ((principal * (rate * periods)) + principal)
+   
+    principal = int (principal)
+    rate = float (rate)
+    periods = int (periods)
+    if rate < 1:
+        return int ((principal * (rate * periods)) + principal)
 
 def body_mass_index(weight, height):
     '''Body Mass Index.
@@ -130,7 +128,6 @@ def body_mass_index(weight, height):
     # Replace `pass` with your code. 
     # Stay within the function. Only use the parameters as input. The function should return your answer.
  
-    def body_mass_index(weight, height):
-        weight = float (weight/2.2046)
-        height = (height[0] / 3.281)+(((height)[1] / 39.37) ** 2)
-        return float ((weight) / (height))
+    weight = float (weight/2.2046)
+    height = (height[0] / 3.281)+(((height)[1] / 39.37) ** 2)
+    return float ((weight) / (height))
